@@ -70,3 +70,63 @@
      
     
 }
+@mixin afterLine($bottom,$left) {
+  content: "";
+  transition: 400ms;
+  border-bottom: 2px solid rgb(243, 247, 26);
+  width: 3vw;
+  position: absolute;
+  top: $bottom;
+  left: $left;
+  @media screen and (max-width:535px ){
+    width: 7vw;
+
+  }
+  
+}
+@mixin fotterSections {
+  h3{
+    font-family: 'Oswald';
+    &::before{
+     @include afterLine(52px,21px);
+   }
+   @media screen and (max-width:600px ){
+    &::before{
+      @include afterLine(29px,21px);
+    }
+  }
+  @media screen and (max-width:767px ) and  (min-width: 600px){
+    &::before{
+      @include afterLine(28px,21px);
+    }
+
+ }
+ @media screen and (max-width:991px ) and  (min-width: 767px){
+  &::before{
+    @include afterLine(48px,21px);
+  }
+
+ }
+   
+   &:hover::before{
+     width: 30%;
+   }
+  }
+  .list{
+    margin-top: 19px;
+   ul {
+     list-style-type: none;
+     padding: 0%;
+     li{
+       padding-bottom: 11px;
+       &:hover{
+         color:#92A8D1 ;
+         cursor: pointer;
+       }
+     }
+    
+    }
+
+  }
+  
+}

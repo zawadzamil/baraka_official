@@ -1,9 +1,17 @@
 @import "mixin";
 @import "var";
+@import url('https://fonts.googleapis.com/css?family=Oswald');   
+$base_button_color: rgb(255, 102, 0);
 body{
    @include nomp();
     overflow-x:hidden;
     height:auto;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }
 .pree_header{
 
@@ -62,9 +70,9 @@ body{
      float: left;
      .col-1{
          padding-left: 8rem;
-         $color: rgb(255, 102, 0);
+        
          .button{
-           @include button($color);
+           @include button($base_button_color);
          }
           
          
@@ -134,7 +142,7 @@ body{
             font-family: Dotum;
         }
         button{
-            width: 15rem;
+            @include button($base_button_color);
         }
         i{
             font-size: larger;
@@ -207,8 +215,13 @@ body{
       display: inline-block;
       position: relative;
      }
+     
    
    }
+   .button{
+     margin-top: 20px;
+    @include button($base_button_color);
+  }
  }
  
   
@@ -236,7 +249,7 @@ body{
     width: 95%;
     height: 500px;
     
-    background-color: #0ca59d;
+   
     img{
         @include imageFit;
     }
@@ -245,40 +258,68 @@ body{
   
 }
 footer{
-  width: 100%;
+  width: 100vw;
   height: 350px;
   background-color: #170641;
   color: #f4f8f8;
 
  .row{
-   .title{
-     position: relative;
-     margin-top: 30%;
-   }
-   h5{
-      font-family: 'Microsoft JhengHei UI';
-   }
-   ul{
-    list-style-type: none;
-    padding: 0%; 
-    margin-top: 15px;
-    @include nomp
-   }
-   i{
-    color: #f4f8f8;
-   }
-   li{
-     display: inline;
-     font-size: 2rem;
-     padding: 0.5rem;
-     margin-left: 10px;
-     background-color: #323233;
-     border-radius: 50%;
+  margin-top: 7%;
+   .baraka{
+    .title{
+      position: relative;
+      font-family: 'Oswald';
+      &::after{
+        $bottom : 44px;
+        $left:6px;
+       @include afterLine($bottom,$left);
+      }
+      &:hover::after{
+       width: 30%;
+     }
      
+    }
+    h5{
+       font-family: 'Microsoft JhengHei UI';
+       word-wrap: break-word;
+    }
+    ul{
+     list-style-type: none;
+     padding: 0%; 
+     margin-top: 35px;
+     
+     
+    }
+    i{
+     color: #f4f8f8;
+    }
+    li{
+      display: inline;
+      font-size: 2rem;
+      padding: 0.5rem;
+      margin-left: 10px;
+      background-color: #323233;
+      border-radius: 50%;
+      
+    }
+    .fa-facebook{
+     padding: 3px;
+ 
+    }
+    .fa-tumblr{
+     padding: 6px;
+    }
    }
-   .fa-facebook, .fa-tumblr{
-    padding: 3px;
 
+   .service{
+    @include fotterSections;
+       
+   }
+   .quickLinks{
+     @include fotterSections;
+   }
+   .contact{
+     @include fotterSections;
    }
    
 
@@ -478,3 +519,221 @@ nav {
     display: block !important;
   }
 }
+
+
+//////////////////////////Media Queries///////////////////////
+@media screen and (max-width:600px ){
+  .header_section{
+    height: 864px;
+    border-bottom-left-radius:0%;
+    img{
+      padding-left: 49px;
+    }
+    .row{
+      margin-top: 0%;
+
+    }
+    
+    
+  }
+  .featured_section{
+    padding: 0%;
+    margin-top: 10vh;
+    height: 100%;
+    .heading{
+      padding: 0 31px 0 56px;
+    }
+    .subtitle{
+      width: 80%;
+      
+
+    }
+    .row{
+      padding: 0% ;
+      justify-content: center;
+    }
+    .services{
+      height: 480px;
+      
+      
+      
+      
+    }
+  
+}
+.idea_section{
+  height: 103%;
+  .row{
+    .imgDiv {
+      @include center;
+      width: 70%;
+      height: 384px;
+  }
+    .ideaDetails{
+      padding: 0px 30px 0 30px;
+    }
+  }
+}
+.about{
+  height: 100%;
+  .col1{
+    padding: 5px 42px 0 44px;
+  }
+}
+footer{
+  height: 100%;
+  .row{
+    padding-left: 3rem;
+  }
+ 
+}
+
+  
+
+}
+
+
+@media screen and (max-width:767px ) and  (min-width: 600px) {
+  .header_section{
+    height: 930px;
+    border-bottom-left-radius:0%;
+  }
+  .featured_section{
+    padding: 0%;
+    margin-top: 10vh;
+    height: 100%;
+    .services{
+      height: 462px;
+    }
+  
+}
+.idea_section{
+  height:100%;
+  
+  .row{
+    .imgDiv{
+     @include center;
+     padding: 5px 43px 0 43px;
+    }
+    .ideaDetails{
+      padding: 5px 50px 0 60px;
+    }
+  }
+}
+.about{
+  height:100%;
+  .col1{
+    padding: 5px 71px 0 75px;
+  }
+  .imageDiv{
+    padding: 5px 50px 0 69px;
+   }
+}
+footer{
+  height:100%;
+  .row{
+    padding-left: 6rem;
+  }
+ 
+}
+
+ 
+
+}
+
+@media screen and (max-width:991px ) and  (min-width: 767px) {
+  .header_section{
+    height: 946px;
+    border-bottom-left-radius:20%;
+  }
+  .featured_section{
+    padding: 0%;
+    margin-top: 10vh;
+    height:100%;
+    .row{
+      padding-right: 0%;
+      
+
+    }
+    #lastCol{
+      
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, );
+     
+    }
+    .services{
+      height: 462px;
+     
+      
+     
+    }
+  
+}
+.idea_section{
+  height:100%;
+  .row{
+    .imgDiv{
+     @include center;
+     padding: 5px 43px 0 43px;
+    }
+    .ideaDetails{
+      padding: 5px 50px 0 60px;
+    }
+  }
+}
+.about{
+  height: 100%;
+  .col1{
+    padding: 5px 71px 0 75px;
+  }
+  .imageDiv{
+    padding: 5px 50px 0 69px;
+   }
+}
+footer{
+  height: 100%;
+  
+  .row{
+    padding: 0%;
+  }
+ 
+}
+
+ 
+
+}
+@media screen and (max-width:1199px ) and  (min-width: 991px){
+  .header_section{
+    height: 600px;
+    border-bottom-left-radius:20%;
+  }
+  .featured_section{
+    padding: 0%;
+    margin-top: 10vh;
+    height: 100%;
+    
+  
+}
+.idea_section{
+  height: 100%;
+  
+}
+.about{
+  height: 100%;
+  
+}
+footer{
+  height: 100%;
+  
+  .row{
+    padding: 0%;
+  }
+ 
+}
+
+ 
+
+}
+
+
