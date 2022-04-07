@@ -1,17 +1,38 @@
 @import "mixin";
 @import "var";
 @import url('https://fonts.googleapis.com/css?family=Oswald');   
+@import url('https://fonts.googleapis.com/css?family=Roboto Condensed');   
+@import url('https://fonts.googleapis.com/css?family=Bebas Neue');   
 $base_button_color: rgb(255, 102, 0);
 body{
    @include nomp();
     overflow-x:hidden;
     height:auto;
+    box-sizing: border-box;
+    
 }
 #btn-back-to-top {
   position: fixed;
+  background-color: #0ca59d;
+  color: #f9f9f9;
+  transition: 400ms ;
   bottom: 20px;
   right: 20px;
   display: none;
+
+  &:hover{
+    background-color: #d1be14;
+    transition: 400ms ;
+    i{
+      font-size: larger;
+      transition: 1s ;
+      transform: translateY(-1rem);
+    
+      
+     
+    }
+
+  }
 }
 .pree_header{
 
@@ -257,6 +278,188 @@ body{
   
   
 }
+.serviceS{
+   background-image: url(../images/EXJ5OP.jpg);
+   background-size: cover;
+   background-position: 50% 50%;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   box-shadow: $shadow18;
+   border-radius: 2%;
+   text-align: center;
+  color: #fdf4f4;
+  width: 100%;
+  height:100%;
+  padding: 10px 0px 10px 50px;
+  .container{
+   
+  }
+  .header{
+    text-align: center;
+    h1{
+      font-family:Bebas Neue ;
+    }
+    .subtitle{
+      width: 50%;
+      @include center;
+      h5{
+        font-family: 'Gill Sans';
+      }
+
+    }
+    
+  }
+  .row{
+    
+    .element{
+      height: 230px;
+      width: 90%;
+      margin-bottom: 20px;
+      box-shadow: $shadow18;
+      border-radius: 1rem;
+      transition: 700ms;
+      text-align: center;
+      background-color: #000000c2;
+     @include content;
+     margin-top: 40px;
+     &:hover{
+       transform: translateY(-1rem);
+       .icon{
+        transition: 700ms;
+         background-color: #0ca59d;
+         i{
+          transition: 70ms;
+           color: #ffffff;
+           font-size: 4rem;
+         }
+       }
+     }
+
+    }
+  }
+  .button{
+    @include button($base_button_color);
+    text-align: center;
+  }
+
+  
+}
+.contactUS{
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .headers{
+    text-align: center;
+    padding-bottom: 20px;
+    h3{
+      font-family: 'Roboto Condensed';
+      color: #0ca59d;
+
+    }
+    h1{
+      font-family: 'Bebas Neue';
+      letter-spacing: 3px;
+    }
+   
+
+  }
+
+  .row{
+    .image{
+      height: 100%;
+      width: 100%;
+      img{
+        @include imageFit;
+      }
+    }
+
+    .contract_form{
+      .form-group{
+        input{
+          width: 100%;
+          height: 3em;
+          border-radius: 1em,1em,0,0;
+          border-style: none;
+          background-color: #defcf9;
+          box-shadow: $shadow5;
+          padding: 1em;
+          font-family:Oswald ;
+         
+         
+        }
+        textarea{
+          width: 100%;
+          height: 10em;
+          border-radius: 1em,1em,0,0;
+          border-style: none;
+          background-color: #defcf9;
+          box-shadow: $shadow5;
+          padding: 1em;
+          font-family:Oswald ;
+        }
+      }
+      .button{
+        margin-top: 10px;
+        @include button($base_button_color);
+      }
+    }
+  }
+  .second{
+    text-align: center;
+    padding: 42px 18px 23px 20px;
+    .element{
+      height: 230px;
+      margin-bottom: 20px;
+      box-shadow: $shadow18;
+      border-radius: 1rem;
+      transition: 700ms;
+    
+      .content{    
+        transform: translateY(30%);
+       
+        .icon{
+          height: 50px;
+          width: 50px;
+          @include center;
+          border-radius: 50%;
+         
+        }
+
+        i{
+          color: #0ca59d;
+          font-size: 3rem;
+          background-size: 30px 30px;
+          transform: translateY(30%);
+        }
+      }
+
+      &:hover{
+        transform: translateY(-1rem);
+      
+        .icon{
+          transition: 700ms;
+          background-color: #0ca59d;
+        }
+        i{
+          transition: 700ms;
+          color: #fdf4f4;
+        }
+       
+      }
+      
+     
+    }
+  }
+}
+.newsletter{
+  height: 100%;
+  .container{
+    @include center;
+    width: 90%;
+    background-color: #0ca59d;
+  }
+}
+
 footer{
   width: 100vw;
   height: 350px;
@@ -331,7 +534,7 @@ footer{
 
 
 
-
+//////////////////Nav BAr/////////////////
 $content-width: 1000px;
 $breakpoint: 799px;
 $nav-height: 70px;
@@ -363,9 +566,7 @@ body{
   text-transform: uppercase;
   font-size: 1.4em;
   
-  &:hover{
-    
-  }
+  
 
   a,
   a:visited {
@@ -519,7 +720,7 @@ nav {
     display: block !important;
   }
 }
-
+////////////////Nav bar ENDS////////////////////
 
 //////////////////////////Media Queries///////////////////////
 @media screen and (max-width:600px ){
@@ -576,9 +777,47 @@ nav {
 }
 .about{
   height: 100%;
+  .imageDiv{
+    width: 75%;
+    height: 300px;
+    @include center;
+
+  }
+
   .col1{
     padding: 5px 42px 0 44px;
   }
+}
+
+.contactUS{
+  .headers{
+   h1{
+     
+     margin-left: 5px;
+   }
+  }
+  .row{
+    
+    .image{
+      height: 60%;
+      width: 60%;
+      @include center;
+      img{
+        @include imageFit;
+      }
+    }
+    .contract_form{
+      margin-left: 15px;
+    }
+  }
+  .second{
+    @include center;
+  }
+  .button{
+    margin-left: 10px;
+  }
+  
+  
 }
 footer{
   height: 100%;
@@ -628,6 +867,25 @@ footer{
   .imageDiv{
     padding: 5px 50px 0 69px;
    }
+}
+.contactUS{
+  .row{
+    .image{
+      height: 60%;
+      width: 60%;
+      @include center;
+      img{
+        @include imageFit;
+      }
+    }
+    .contract_form{
+      margin-left: 15px;
+    }
+  }
+  
+ .second{
+   @include center;
+ }
 }
 footer{
   height:100%;
@@ -691,6 +949,27 @@ footer{
     padding: 5px 50px 0 69px;
    }
 }
+.contactUS{
+  .row{
+    .image{
+      height: 60%;
+      width: 60%;
+      @include center;
+      img{
+        @include imageFit;
+      }
+    }
+    .contract_form{
+      margin-left: 15px;
+    }
+  }
+  
+  .second{
+    display: flex;
+    justify-content: center;
+
+  }
+}
 footer{
   height: 100%;
   
@@ -722,6 +1001,13 @@ footer{
 .about{
   height: 100%;
   
+}
+.contactUS{
+  .second{
+    display: flex;
+    justify-content: center;
+
+  }
 }
 footer{
   height: 100%;

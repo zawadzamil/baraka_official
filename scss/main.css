@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Roboto Condensed");
+@import url("https://fonts.googleapis.com/css?family=Bebas Neue");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 body {
   margin: 0;
@@ -7,13 +9,33 @@ body {
   padding-right: 0%;
   overflow-x: hidden;
   height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #btn-back-to-top {
   position: fixed;
+  background-color: #0ca59d;
+  color: #f9f9f9;
+  -webkit-transition: 400ms;
+  transition: 400ms;
   bottom: 20px;
   right: 20px;
   display: none;
+}
+
+#btn-back-to-top:hover {
+  background-color: #d1be14;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+#btn-back-to-top:hover i {
+  font-size: larger;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
 }
 
 .pree_header {
@@ -419,6 +441,320 @@ body {
   max-height: 100%;
   min-width: 100%;
   min-height: 100%;
+}
+
+.serviceS {
+  background-image: url(../images/EXJ5OP.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 2%;
+  text-align: center;
+  color: #fdf4f4;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0px 10px 50px;
+}
+
+.serviceS .header {
+  text-align: center;
+}
+
+.serviceS .header h1 {
+  font-family: Bebas Neue;
+}
+
+.serviceS .header .subtitle {
+  width: 50%;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+}
+
+.serviceS .header .subtitle h5 {
+  font-family: 'Gill Sans';
+}
+
+.serviceS .row .element {
+  height: 230px;
+  width: 90%;
+  margin-bottom: 20px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 1rem;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  text-align: center;
+  background-color: #000000c2;
+  margin-top: 40px;
+}
+
+.serviceS .row .element .content {
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.serviceS .row .element .content .icon {
+  height: 50px;
+  width: 50px;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.serviceS .row .element .content i {
+  color: #0ca59d;
+  font-size: 3rem;
+  background-size: 30px 30px;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.serviceS .row .element:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.serviceS .row .element:hover .icon {
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  background-color: #0ca59d;
+}
+
+.serviceS .row .element:hover .icon i {
+  -webkit-transition: 70ms;
+  transition: 70ms;
+  color: #ffffff;
+  font-size: 4rem;
+}
+
+.serviceS .button {
+  display: inline-block;
+  padding: .75rem 3.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+}
+
+.serviceS .button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6600;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.serviceS .button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #b34700;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.serviceS .button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.serviceS .button:hover:before {
+  width: 100%;
+}
+
+.contactUS {
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contactUS .headers {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contactUS .headers h3 {
+  font-family: 'Roboto Condensed';
+  color: #0ca59d;
+}
+
+.contactUS .headers h1 {
+  font-family: 'Bebas Neue';
+  letter-spacing: 3px;
+}
+
+.contactUS .row .image {
+  height: 100%;
+  width: 100%;
+}
+
+.contactUS .row .image img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.contactUS .row .contract_form .form-group input {
+  width: 100%;
+  height: 3em;
+  border-radius: 1em,1em,0,0;
+  border-style: none;
+  background-color: #defcf9;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1em;
+  font-family: Oswald;
+}
+
+.contactUS .row .contract_form .form-group textarea {
+  width: 100%;
+  height: 10em;
+  border-radius: 1em,1em,0,0;
+  border-style: none;
+  background-color: #defcf9;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1em;
+  font-family: Oswald;
+}
+
+.contactUS .row .contract_form .button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: .75rem 3.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.contactUS .row .contract_form .button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6600;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.contactUS .row .contract_form .button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #b34700;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.contactUS .row .contract_form .button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contactUS .row .contract_form .button:hover:before {
+  width: 100%;
+}
+
+.contactUS .second {
+  text-align: center;
+  padding: 42px 18px 23px 20px;
+}
+
+.contactUS .second .element {
+  height: 230px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 1rem;
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+.contactUS .second .element .content {
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.contactUS .second .element .content .icon {
+  height: 50px;
+  width: 50px;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.contactUS .second .element .content i {
+  color: #0ca59d;
+  font-size: 3rem;
+  background-size: 30px 30px;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.contactUS .second .element:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.contactUS .second .element:hover .icon {
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  background-color: #0ca59d;
+}
+
+.contactUS .second .element:hover i {
+  -webkit-transition: 700ms;
+  transition: 700ms;
+  color: #fdf4f4;
+}
+
+.newsletter {
+  height: 100%;
+}
+
+.newsletter .container {
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+  width: 90%;
+  background-color: #0ca59d;
 }
 
 footer {
@@ -1024,8 +1360,42 @@ nav ul li ul li a {
   .about {
     height: 100%;
   }
+  .about .imageDiv {
+    width: 75%;
+    height: 300px;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: auto;
+  }
   .about .col1 {
     padding: 5px 42px 0 44px;
+  }
+  .contactUS .headers h1 {
+    margin-left: 5px;
+  }
+  .contactUS .row .image {
+    height: 60%;
+    width: 60%;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: auto;
+  }
+  .contactUS .row .image img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .contactUS .row .contract_form {
+    margin-left: 15px;
+  }
+  .contactUS .second {
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: auto;
+  }
+  .contactUS .button {
+    margin-left: 10px;
   }
   footer {
     height: 100%;
@@ -1068,6 +1438,27 @@ nav ul li ul li a {
   }
   .about .imageDiv {
     padding: 5px 50px 0 69px;
+  }
+  .contactUS .row .image {
+    height: 60%;
+    width: 60%;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: auto;
+  }
+  .contactUS .row .image img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .contactUS .row .contract_form {
+    margin-left: 15px;
+  }
+  .contactUS .second {
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: auto;
   }
   footer {
     height: 100%;
@@ -1120,6 +1511,30 @@ nav ul li ul li a {
   .about .imageDiv {
     padding: 5px 50px 0 69px;
   }
+  .contactUS .row .image {
+    height: 60%;
+    width: 60%;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: auto;
+  }
+  .contactUS .row .image img {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .contactUS .row .contract_form {
+    margin-left: 15px;
+  }
+  .contactUS .second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   footer {
     height: 100%;
   }
@@ -1143,6 +1558,14 @@ nav ul li ul li a {
   }
   .about {
     height: 100%;
+  }
+  .contactUS .second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer {
     height: 100%;

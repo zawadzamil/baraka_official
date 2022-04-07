@@ -130,3 +130,25 @@
   }
   
 }
+
+@mixin content {
+  .content{    
+    transform: translateY(30%);
+   
+    .icon{
+      height: 50px;
+      width: 50px;
+      @include center;
+      border-radius: 50%;
+     
+    }
+
+    i{
+      color: #0ca59d;
+      font-size: 3rem;
+      background-size: 30px 30px;
+      transform: translateY(30%);
+    }
+  }
+  
+}
