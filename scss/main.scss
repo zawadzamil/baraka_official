@@ -257,6 +257,11 @@ $base_button_color: rgb(255, 102, 0);
   height: 500px;
   .col1{
     margin-top: 10%;
+
+    button{
+      @include button($base_button_color);
+      border: 0px;
+    }
   }
   h1{
     font-family:'Franklin Gothic Medium';
