@@ -3,14 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');   
 @import url('https://fonts.googleapis.com/css?family=Roboto Condensed');   
 @import url('https://fonts.googleapis.com/css?family=Bebas Neue');   
+@import url('https://fonts.googleapis.com/css?family=Playfair Display');   
+@import url('https://fonts.googleapis.com/css?family=Titillium Web');   
+@import url('https://fonts.googleapis.com/css?family=Libre Baskerville');   
 $base_button_color: rgb(255, 102, 0);
-body{
-   @include nomp();
-    overflow-x:hidden;
-    height:auto;
-    box-sizing: border-box;
-    
-}
+ 
+
 #btn-back-to-top {
   position: fixed;
   background-color: #0ca59d;
@@ -70,12 +68,18 @@ body{
     }
 }
 .header_section{
-    width: 100vw;
-    height: 650px;
+   
     background-color: #0ca59d;
     position: relative;
-    background-image: url(../images/bg4.png);
     border-bottom-left-radius:30%;
+    
+    
+    .headerBody{
+      width: 100%;
+      height:60rem;
+     
+     
+    }
  
    
   
@@ -726,7 +730,11 @@ nav {
 @media screen and (max-width:600px ){
   .header_section{
     height: 864px;
+    
     border-bottom-left-radius:0%;
+    .brand{
+
+    }
     img{
       padding-left: 49px;
     }

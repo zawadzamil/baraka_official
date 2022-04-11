@@ -1,0 +1,358 @@
+.about_header {
+  width: 100%;
+  height: 25rem;
+  background-color: #0ca59d;
+}
+
+.about_header .heading {
+  text-align: center;
+  color: aliceblue;
+  font-family: Playfair Display;
+  -webkit-transform: translate(0, 60%);
+          transform: translate(0, 60%);
+}
+
+.about_header .heading h2 {
+  text-align: center;
+}
+
+.about_header .heading a {
+  color: white;
+}
+
+.about_header .title {
+  position: relative;
+}
+
+.about_details {
+  padding: 2rem 10rem 2rem 13rem;
+  font-family: Titillium Web;
+  height: 100%;
+}
+
+.about_details h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.about_details .first #a {
+  font-size: 5rem;
+  color: #4b083a;
+}
+
+.about_details .second {
+  margin-top: 4rem;
+}
+
+.about_details .second img {
+  float: right;
+  height: 48rem;
+  width: 70rem;
+}
+
+.about_details p {
+  font-size: 2rem;
+}
+
+.discuss {
+  padding: 2rem 10rem 5rem 15rem;
+  margin-bottom: 4rem;
+  height: 30rem;
+  background-color: rgba(162, 229, 238, 0.246);
+}
+
+.discuss .title {
+  width: 40%;
+  -webkit-transform: translateY(70%);
+          transform: translateY(70%);
+}
+
+.discuss .title h3 {
+  font-weight: bold;
+  font-family: Libre Baskerville;
+  font-size: 3rem;
+  color: #020724;
+}
+
+.discuss button {
+  float: right;
+  background-color: #090f47;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.discuss button i {
+  padding: 0.5rem;
+  background-color: #660a4a;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.discuss button:hover {
+  background-color: #0a228d;
+}
+
+.why {
+  padding: 2rem 15rem 5rem 19rem;
+  margin-bottom: 4rem;
+  height: 31rem;
+}
+
+.why .why_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  min-width: 192px;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+  border-radius: 33px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-top: 2rem;
+}
+
+.why .why_card .icon {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.why .why_card .icon i {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  font-size: 4rem;
+  color: #08107c;
+}
+
+.why .why_card:hover {
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+.why .why_card:hover .icon {
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-color: #08107c;
+}
+
+.why .why_card:hover .icon i {
+  -webkit-transition: .4s;
+  transition: .4s;
+  color: aliceblue;
+}
+
+.call {
+  height: 50rem;
+  margin-top: 5rem;
+  padding: 5rem 10rem 5rem 15rem;
+}
+
+.call .row .desc {
+  -webkit-transform: translateY(70%);
+          transform: translateY(70%);
+  text-align: center;
+}
+
+.call .row .desc h3 {
+  color: #f3ad0b;
+}
+
+.call .row .desc a {
+  color: #f3ad0b;
+}
+
+.call .row .image {
+  height: 25rem;
+  width: 25rem;
+}
+
+.call .row .image img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .pree_header {
+    display: none;
+  }
+  .header_section {
+    height: 39rem !important;
+    min-width: 100%;
+  }
+  .about_details {
+    padding: 0rem 5rem 5rem 7rem;
+    width: 100%;
+  }
+  .about_details .second img {
+    display: none;
+  }
+  .discuss {
+    height: 100%;
+    padding: 2rem 5rem 8rem 5rem;
+  }
+  .discuss .title {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+    width: 100%;
+  }
+  .why {
+    padding: 2rem 5rem 1rem 5rem;
+    height: 100%;
+  }
+  .call {
+    padding: 2rem 5rem 1rem 5rem;
+    height: 100%;
+  }
+  .call .row .desc {
+    -webkit-transform: translateY(0%) !important;
+            transform: translateY(0%) !important;
+  }
+  .call .row .image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
+  .header_section {
+    height: 39rem !important;
+    min-width: 100%;
+  }
+  .header_section {
+    height: 39rem !important;
+    min-width: 100%;
+  }
+  .about_details {
+    padding: 0rem 5rem 5rem 7rem;
+    width: 100%;
+  }
+  .about_details .second img {
+    display: none;
+  }
+  .discuss {
+    height: 100%;
+    padding: 2rem 5rem 8rem 5rem;
+  }
+  .discuss .title {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+    width: 100%;
+  }
+  .why {
+    padding: 2rem 5rem 1rem 5rem;
+    height: 100%;
+  }
+  .call {
+    padding: 2rem 5rem 1rem 5rem;
+    height: 100%;
+  }
+  .call .row .desc {
+    -webkit-transform: translateY(0%) !important;
+            transform: translateY(0%) !important;
+  }
+  .call .row .image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .header_section {
+    height: 44rem !important;
+    min-width: 100%;
+    border-radius: 0%;
+  }
+  .about_details {
+    padding: 0rem 5rem 5rem 7rem;
+    width: 100%;
+  }
+  .about_details .second img {
+    height: 35rem;
+    width: 35rem;
+  }
+  .discuss {
+    height: 100%;
+    padding: 2rem 5rem 8rem 5rem;
+  }
+  .discuss .title {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+    width: 100%;
+  }
+  .why {
+    padding: 2rem 5rem 1rem 5rem;
+    height: 100%;
+  }
+  .call {
+    padding: 2rem 5rem 1rem 5rem;
+    height: 100%;
+  }
+  .call .row .desc {
+    -webkit-transform: translateY(0%) !important;
+            transform: translateY(0%) !important;
+  }
+  .call .row .image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 991px) {
+  .header_section {
+    height: 44rem !important;
+    min-width: 100%;
+    border-radius: 0%;
+  }
+  .about_details {
+    padding: 0rem 5rem 5rem 7rem;
+    width: 100%;
+  }
+  .about_details .second img {
+    height: 35rem;
+    width: 35rem;
+  }
+  .discuss {
+    height: 100%;
+    padding: 2rem 5rem 8rem 5rem;
+  }
+  .discuss .title {
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+    width: 100%;
+  }
+  .why {
+    padding: 2rem 5rem 1rem 5rem;
+    height: 100%;
+  }
+  .call {
+    padding: 2rem 5rem 1rem 5rem;
+    height: 100%;
+    margin-top: 24rem;
+  }
+  .call .row .desc {
+    -webkit-transform: translateY(0%) !important;
+            transform: translateY(0%) !important;
+  }
+  .call .row .image {
+    height: 19rem;
+    width: 19rem;
+  }
+}
+/*# sourceMappingURL=about.css.map */
