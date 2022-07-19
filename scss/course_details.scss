@@ -1,0 +1,253 @@
+@import "mixin";
+@import "var";
+@import url("https://fonts.googleapis.com/css?family=Koulen");
+@import url("https://fonts.googleapis.com/css?family=Akshar");
+@import url("https://fonts.googleapis.com/css?family=Odibee Sans");
+@import url("https://fonts.googleapis.com/css?family=Source Code Pro");
+@import url("https://fonts.googleapis.com/css?family=Archivo Narrow");
+@import url("https://fonts.googleapis.com/css?family=El Messiri");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+.course_details{
+    margin-top: 5rem;
+    .row{
+        .course_about{
+            margin-top: 4rem;
+            height: fit-content;
+            width: 100%;
+           
+            border-radius: 1rem;
+            border: 1px dashed rgba(87, 80, 80, 0.328);
+            box-shadow: $shadow46;
+            .image{
+                height: 20rem;
+                width: 80%;
+                @include center;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                img{
+                    @include imageFit;
+                }
+               
+              
+            }
+            .details{
+                padding: 2rem 0rem 2rem 2rem;
+                margin-left: 3rem;
+                p{
+                    line-height:153%;
+                }
+                i{
+                    color: rgb(7, 138, 138);
+                }
+               
+                span{
+                    float: right;
+                    padding-right: 7rem;
+                 }
+                
+
+            }
+           .button{
+               text-align: center;
+               @include center;
+               button{
+               margin-bottom: 2rem;
+                 width: 140px;
+               height: 45px;
+               font-family: Source Code Pro;
+               font-size: 1.7rem;
+               text-transform: uppercase;
+               letter-spacing: 2.5px;
+               font-weight: 500;
+               width: 20rem;
+               color: #000;
+               background-color: rgb(35, 190, 190);
+               border: none;
+               border-radius: 45px;
+               box-shadow: 0px 8px 15px rgba(17, 16, 16, 0.342);
+               transition: all 0.3s ease 0s;
+               cursor: pointer;
+               outline: none;
+                 &:hover{
+                     background-color: #2EE59D;
+                     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+                     color: #fff;
+                     transform: translateY(-7px);
+                     
+                 }
+              }
+           }
+           
+        }
+        .courseDetails{
+            h1{
+                font-family:Akshar;
+               
+            }
+            .price{
+                height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+            background-color: rgb(41, 7, 104);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: right;
+            transform: translateY(-13%);
+            p{
+                color: #fff;
+                font-size: 1.8rem;
+                font-family: El Messiri;
+            }
+               
+            }
+            h5{
+                width: 85%;
+                font-family: Akshar;
+                font-size: 1.8rem;
+            }
+            .image{
+                height: 50rem;
+                border-radius: 1rem;
+                box-shadow: $shadow18;
+                img{
+                    @include imageFit;
+                }
+                
+            }
+            
+        }
+        
+        .buttonDiv{
+            text-align: center;
+            padding: 3rem;
+            
+            button{
+                width: 49%;
+                border: 1px transparent;
+                padding: 2rem;
+               box-shadow: rgba(36, 148, 200, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+                font-size: 1.8rem;
+                font-family: El Messiri;
+                color: #fff;
+              &:hover{
+                  transition: 400ms;
+                  box-shadow: rgba(27, 83, 146, 0.56) 0px 22px 70px 4px;
+              }
+            }
+            #firstButton{
+                background-color: $base_color;
+                
+            }
+            #secondButton{
+                background-color: rgb(21, 21, 85);
+                padding-left: 1rem;
+
+            }
+        }
+        .details{
+            padding-bottom: 2rem;
+            margin-bottom: 8rem;
+            
+            h3{
+                font-family:Akshar;
+                font-weight: bold;
+            }
+            h5{
+                font-family: Merriweather;
+                line-height: 150%;
+
+            }
+            ul{
+                list-style: none;
+                margin-left: -2rem;
+               
+            }
+            li{
+                font-family: Merriweather;
+                font-size: 1.7rem;
+                line-height: 170%;
+                &::before{
+                    content: '✿';
+                    padding: 1rem;
+                    color: $base_color;
+                }
+            }
+         #curriculum{
+             display: none;
+             ul{
+                list-style: none;
+                margin-left: -2rem;
+               
+            }
+            li{
+                font-family: Merriweather;
+                font-size: 1.8rem;
+                line-height: 170%;
+                &::before{
+                    content: '☛';
+                    padding: 1rem;
+                    color: $base_color;
+                }
+            }
+         }
+        }
+      
+
+    }
+}
+
+.community{
+   background-image: url(../images/join.png);
+   background-size: 100% 100%;
+   background-position: center;
+    
+    margin-left: 4rem;
+    margin-right: 4rem;
+    color: #fff;
+    font-size: 2rem;
+    font-family: Koulen;
+    height: 40rem;
+    margin-bottom: 4rem;
+    box-shadow: $shadow30;
+    .join{
+       width: 80%;
+       margin-left: 50%;
+       margin-right: 50%;
+       margin: auto;
+       padding-top: 8rem;
+       h1{
+           font-size: 5rem;
+       }
+       
+     
+
+    }
+  
+    button{
+        float: right;
+        @include button(rgb(255, 145, 0));
+        width: 15rem;
+        font-size: 2rem;
+        border: 1px transparent;
+    }
+}
+
+@media screen and (max-width:767px ){
+    .container{
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+        .image{
+            width: 100%;
+            height: 80% !important;
+        }
+    }
+}
+@media screen and (max-width:991px ){
+    .image{
+        width: 90%;
+        height: 100% !important;
+    }
+
+}

@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
+@import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+.details {
+  margin-top: 5rem;
+}
+
+.details .row h2 {
+  font-family: Playfair Display;
+}
+
+.details .row h4 {
+  font-family: Playfair Display;
+  font-weight: bold;
+}
+
+.details .row p {
+  font-family: Lora;
+  font-size: 1.5rem;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.details .row ul {
+  font-family: Inconsolata;
+  font-size: 2rem;
+  list-style: none;
+}
+
+.details .row ul li {
+  padding-left: 1em;
+}
+
+.details .row ul li::before {
+  content: "✔ ";
+  color: red;
+  /* or whatever color you prefer */
+}
+
+.details .row .service_image {
+  height: 25rem;
+  width: 30rem;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1rem;
+}
+
+.details .row .service_image img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 1rem;
+  min-height: 100%;
+}
+
+.details .row .service_image_2 {
+  width: 100%;
+  height: 100%;
+}
+
+.details .row .service_image_2 img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.details .row .others {
+  margin-top: 4rem;
+}
+
+.details .row .others p {
+  font-size: 1.8rem;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.details .row .others h4 {
+  font-size: 2rem;
+}
+
+.details .row .plan {
+  background-color: rgba(211, 193, 114, 0.479);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: none;
+}
+
+.details .row .plan .inputs {
+  margin-top: 2rem;
+}
+
+.details .row .plan .inputs input, .details .row .plan .inputs textarea {
+  display: block;
+  margin-bottom: 1rem;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #239bb9;
+  font-family: Verdana;
+}
+
+.details .row .plan .inputs textarea {
+  height: 15rem;
+}
+
+.details .row .plan .inputs button {
+  padding: 1rem;
+  width: 20rem;
+  background-color: #12032e;
+  color: azure;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  font-family: monospace;
+}
+
+.details .row .plan .inputs button:hover {
+  background-color: rgba(82, 15, 9, 0.918);
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.details .row .service_image_2 {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 1rem;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.details .row .service_image_2 img {
+  border-radius: 1rem;
+}
+
+.services {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.services h1 {
+  font-family: 'Gill Sans';
+}
+
+.services .row {
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+  padding-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+.services .row .service {
+  height: 30rem;
+  width: 100%;
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+
+.services .row .service img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+}
+
+.services .row .service h4 {
+  font-size: 2.5rem;
+  color: #1b085c;
+}
+
+.services .row .service :hover {
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+@media screen and (max-width: 767px) {
+  .services h1 {
+    margin-bottom: 1rem;
+  }
+  .services .row {
+    padding-right: 2rem;
+  }
+  .details .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+/*# sourceMappingURL=service.css.map */

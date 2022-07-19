@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto Condensed'); 
+@import url('https://fonts.googleapis.com/css?family=Koulen'); 
+@import url('https://fonts.googleapis.com/css?family=Source Sans Pro'); 
+@import url('https://fonts.googleapis.com/css?family=Roboto Slab'); 
+@import "mixin";
+@import "var";
+.works{
+    .row   {
+        h1{
+            margin-bottom: 4rem;
+            font-family: Roboto Condensed;
+        }
+        margin-bottom: 4rem;
+        margin-top: 2rem;
+        text-align: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        .card{
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 2rem;
+           
+            img{
+                @include imageFit;
+                border-radius: 1rem;
+                box-shadow: $shadow18;
+               
+               
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: #0c0455ab;
+                
+              }
+              
+              
+              .text {
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+              }
+              &:hover{
+                .overlay {
+                    opacity: 1;
+                  }
+                 
+              }
+            
+            
+        }
+       .col-md-6{
+           padding-bottom: 2rem;
+       }
+
+       .techCard{
+           height: 10rem;
+           width: 100%;
+           max-height: 100%;
+           
+           img{
+            max-width: 100%;
+            max-height: 100%;
+            min-height: 10rem;
+        }
+       }
+    }
+    .second{
+        margin-bottom: 10rem;
+    }
+}
+
+
+.project_details{
+    .row
+    {
+        h1{
+            font-family: Roboto Condensed;
+            margin-bottom: 4rem;
+        }
+        margin-top: 2rem;
+        padding: 4rem;
+        text-align: center;
+        .image{
+            height: 30rem;
+            width: 100%;
+            img{
+                @include imageFit;
+                border-radius: 1rem;
+               
+            }
+        }
+        
+    }
+    .features{
+        text-align: left;
+       
+       
+    }
+    .right{
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        h3{
+            font-family: Georgia;
+        }
+        text-align: center;
+        background-color: rgba(117, 114, 109, 0.219);
+        p{
+            text-align: left;
+            font-size: 2rem;
+            font-family: 'Trebuchet MS' ;
+        }
+    }
+    .second{
+        
+        margin-top: -1rem !important;
+       .image2{
+           height: 15rem;
+           width: 100%;
+           margin-bottom: 2rem;
+        img{
+            @include imageFit;
+            border-radius: 1rem;
+          
+
+        }
+       }
+    }
+    .features{
+        text-align: center;
+        h3{
+            font-family: Koulen;
+
+        }
+        p{
+            font-family: Source Sans Pro;
+            font-size: 2rem;
+        }
+        ul{
+            font-size: 2rem;
+            list-style: none;
+            font-family: Roboto Slab;
+            text-align: left;
+        }
+        li {
+           margin-left: 20%;
+            
+          }
+          
+          li::before {
+            content: "ツ ";
+            color: rgb(248, 28, 28); /* or whatever color you prefer */
+            font-weight: bold;
+          }
+    }
+}
+
+.other_projects{
+    .row{
+        text-align: center;
+        padding: 5rem;
+        h2{
+            margin-bottom: 2rem;
+            font-family:Roboto Condensed ;
+        }
+        .image{
+            width: 100%;
+            height: 20rem;
+            img{
+               @include imageFit;
+               border-radius: 1rem;
+
+            }
+            &:hover{
+                transform: translateY(-2rem);
+                transition: 400ms;
+            }
+        }
+        span{
+            font-size: 2rem;
+            color: rgb(5, 5, 59);
+            font-family:Roboto Slab ;
+        }
+    }
+}

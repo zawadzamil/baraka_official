@@ -1,0 +1,331 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Koulen");
+@import url("https://fonts.googleapis.com/css?family=Akshar");
+@import url("https://fonts.googleapis.com/css?family=Odibee Sans");
+@import url("https://fonts.googleapis.com/css?family=Source Code Pro");
+@import url("https://fonts.googleapis.com/css?family=Archivo Narrow");
+@import url("https://fonts.googleapis.com/css?family=El Messiri");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+.course_details {
+  margin-top: 5rem;
+}
+
+.course_details .row .course_about {
+  margin-top: 4rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px dashed rgba(87, 80, 80, 0.328);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.course_details .row .course_about .image {
+  height: 20rem;
+  width: 80%;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.course_details .row .course_about .image img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.course_details .row .course_about .details {
+  padding: 2rem 0rem 2rem 2rem;
+  margin-left: 3rem;
+}
+
+.course_details .row .course_about .details p {
+  line-height: 153%;
+}
+
+.course_details .row .course_about .details i {
+  color: #078a8a;
+}
+
+.course_details .row .course_about .details span {
+  float: right;
+  padding-right: 7rem;
+}
+
+.course_details .row .course_about .button {
+  text-align: center;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+}
+
+.course_details .row .course_about .button button {
+  margin-bottom: 2rem;
+  width: 140px;
+  height: 45px;
+  font-family: Source Code Pro;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  width: 20rem;
+  color: #000;
+  background-color: #23bebe;
+  border: none;
+  border-radius: 45px;
+  -webkit-box-shadow: 0px 8px 15px rgba(17, 16, 16, 0.342);
+          box-shadow: 0px 8px 15px rgba(17, 16, 16, 0.342);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.course_details .row .course_about .button button:hover {
+  background-color: #2EE59D;
+  -webkit-box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+          box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.course_details .row .courseDetails h1 {
+  font-family: Akshar;
+}
+
+.course_details .row .courseDetails .price {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background-color: #290768;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  -webkit-transform: translateY(-13%);
+          transform: translateY(-13%);
+}
+
+.course_details .row .courseDetails .price p {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: El Messiri;
+}
+
+.course_details .row .courseDetails h5 {
+  width: 85%;
+  font-family: Akshar;
+  font-size: 1.8rem;
+}
+
+.course_details .row .courseDetails .image {
+  height: 50rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.course_details .row .courseDetails .image img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.course_details .row .buttonDiv {
+  text-align: center;
+  padding: 3rem;
+}
+
+.course_details .row .buttonDiv button {
+  width: 49%;
+  border: 1px transparent;
+  padding: 2rem;
+  -webkit-box-shadow: rgba(36, 148, 200, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+          box-shadow: rgba(36, 148, 200, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  font-size: 1.8rem;
+  font-family: El Messiri;
+  color: #fff;
+}
+
+.course_details .row .buttonDiv button:hover {
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  -webkit-box-shadow: rgba(27, 83, 146, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(27, 83, 146, 0.56) 0px 22px 70px 4px;
+}
+
+.course_details .row .buttonDiv #firstButton {
+  background-color: #0ca59d;
+}
+
+.course_details .row .buttonDiv #secondButton {
+  background-color: #151555;
+  padding-left: 1rem;
+}
+
+.course_details .row .details {
+  padding-bottom: 2rem;
+  margin-bottom: 8rem;
+}
+
+.course_details .row .details h3 {
+  font-family: Akshar;
+  font-weight: bold;
+}
+
+.course_details .row .details h5 {
+  font-family: Merriweather;
+  line-height: 150%;
+}
+
+.course_details .row .details ul {
+  list-style: none;
+  margin-left: -2rem;
+}
+
+.course_details .row .details li {
+  font-family: Merriweather;
+  font-size: 1.7rem;
+  line-height: 170%;
+}
+
+.course_details .row .details li::before {
+  content: '✿';
+  padding: 1rem;
+  color: #0ca59d;
+}
+
+.course_details .row .details #curriculum {
+  display: none;
+}
+
+.course_details .row .details #curriculum ul {
+  list-style: none;
+  margin-left: -2rem;
+}
+
+.course_details .row .details #curriculum li {
+  font-family: Merriweather;
+  font-size: 1.8rem;
+  line-height: 170%;
+}
+
+.course_details .row .details #curriculum li::before {
+  content: '☛';
+  padding: 1rem;
+  color: #0ca59d;
+}
+
+.community {
+  background-image: url(../images/join.png);
+  background-size: 100% 100%;
+  background-position: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  color: #fff;
+  font-size: 2rem;
+  font-family: Koulen;
+  height: 40rem;
+  margin-bottom: 4rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.community .join {
+  width: 80%;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin: auto;
+  padding-top: 8rem;
+}
+
+.community .join h1 {
+  font-size: 5rem;
+}
+
+.community button {
+  float: right;
+  display: inline-block;
+  padding: .75rem 3.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 15rem;
+  font-size: 2rem;
+  border: 1px transparent;
+}
+
+.community button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff9100;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.community button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #b36600;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.community button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.community button:hover:before {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
+  .container .image {
+    width: 100%;
+    height: 80% !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .image {
+    width: 90%;
+    height: 100% !important;
+  }
+}
+/*# sourceMappingURL=course_details.css.map */
